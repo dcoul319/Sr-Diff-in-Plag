@@ -36,9 +36,9 @@ def sr_transformation(data,t):
     distance = data["Distance"]
     lennie = len(distance) # Simple length argument
     sr_conc = data["Sr (ug/g)"]
-    sr_unc = 0.02*sr_conc
+    sr_unc = 0.0038*sr_conc
     an_num = data["An#"]
-    an_unc = 0.01*an_num
+    an_unc = 0.0033*an_num
     sr_av = round(sum(sr_conc)/len(sr_conc)) # Calculate an avg. Sr conc
     # Generate intra-crystal partition coefficients, initialize
     d = []
